@@ -1,7 +1,10 @@
 import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
-  /* config options here */
+  env: {
+    REDIRECT_URL : 'http://localhost:3000/auth/google'
+  }
+  /* config options here */ 
 };
 
 export default nextConfig;
