@@ -10,7 +10,6 @@ export async function GET(req: NextRequest) {
   });
 
   const data = await backendRes.json();
-  console.log("data fetched from backend", JSON.stringify(data));
   if (!backendRes.ok) {
     return NextResponse.json({ user: null }, { status: 401 });
   }
