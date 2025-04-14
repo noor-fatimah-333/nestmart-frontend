@@ -1,11 +1,14 @@
 import LoginButton from "./auth/LoginButton";
+import ProductList from "./products/productList";
 
-export default function Home() {
+export default function HomePage() {
   return (
-    <div>
-      <h2>Welcome to NestMart! 🚀</h2>
-      <p>Your one-stop shop for all products.</p>
-      <LoginButton />
-    </div>
+    <main className="p-6">
+      <div className="flex justify-between items-center mb-4">
+        <h1 className="text-2xl font-bold">NestMart 🛒</h1>
+        <LoginButton />
+      </div>
+      <ProductList />
+    </main>
   );
 }
